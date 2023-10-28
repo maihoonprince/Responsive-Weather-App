@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop id="video-background">
+        <source src="./Changing mountain.mp4" type="video/mp4">
+        <!-- You can add additional <source> elements for different video formats -->
+    </video>
+
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="logo">SkyCast</div>
+            <div class="right-nav">
+                <a href="./index.html">Home</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <section class="forcast">
+
+                <div class="input">
+                    <input type="text" id="city-input" placeholder="Enter City Name...">
+
+                    <button id="search-button">Search</button>
+                </div>
+
+                <section class="display">
+                    <div class="wrapper">
+                        <h2 id="city-name"></h2>
+                        <p id="city-time"></p> 
+                        <p id="sky-con"></p>
+                        <p id="city-temp"></p>
+                        <p id="windSpeed"></p>
+                    </div>
+                </section>
+
+
+            </section>
+
+            <!-- <div class="bottonContainer">
+
+                <div class="cityBlock">
+                    <h2 id="cityoutput">Delhi - India</h2>
+                    <p id="skyCondition"></p>
+                    <p id="cityTemp">40</p>
+                    <p id="windSpeed"></p>
+                </div>
+
+                <div class="cityBlock">
+                    <h2 id="delhi">Delhi - India</h2>
+                    <h5 id="delhi-time">localTime</h5>
+                    <!-- <p id="skyCondition"></p> -->
+            <!-- <p id="delhi-temp">40</p> -->
+            <!-- <p id="windSpeed"></p> -->
+            <!-- </div>
+
+                <div class="cityBlock">
+                    <h2 id="cityoutput">Delhi - India</h2>
+                    <p id="skyCondition"></p>
+                    <p id="cityTemp">40</p>
+                    <p id="windSpeed"></p>
+                </div>
+
+                <div class="cityBlock">
+                    <h2 id="cityoutput">Delhi - India</h2>
+                    <p id="skyCondition"></p>
+                    <p id="cityTemp">40</p>
+                    <p id="windSpeed"></p>
+                </div>
+
+                <div class="cityBlock">
+                    <h2 id="cityoutput">Delhi - India</h2>
+                    <p id="skyCondition"></p>
+                    <p id="cityTemp">40</p>
+                    <p id="windSpeed"></p>
+                </div> -->
+
+        </div>
+        <footer>
+            <h6>Created with 🖤</h6>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

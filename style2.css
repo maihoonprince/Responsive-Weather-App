@@ -1,0 +1,187 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+  
+  .container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(43, 183, 136);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    margin: 10px 0;
+    font-weight: 900;
+    font-size: 24px;
+    color: rgb(60, 57, 104);
+  }
+  
+  .right-nav {
+    margin: 10px 0;
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .right-nav a {
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .forcast {
+    padding: 15px;
+    margin: 25px;
+    color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    text-align: center;
+    background-image: url(./img1.avif);
+    border: 2px solid rgb(42, 37, 37);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .input input[type="text"] {
+    width: 100%;
+    background: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid rgb(8, 5, 5);
+    background-color: rgb(215, 230, 173);
+    border-radius: 10px;
+  }
+  
+  #search-button {
+    width: 100%;
+    max-width: 200px;
+    background-color: #ab923e;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(219, 223, 228);
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .wrapper {
+    margin: 0 10px;
+    background-color: rgb(138, 140, 67);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .wrapper h2 {
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+    background: #3c6975;
+    color: white;
+  }
+  
+  .wrapper p {
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer h6 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right-nav {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+  
+    .logo {
+      margin: 10px 0;
+    }
+  
+    .input {
+      padding: 15px;
+    }
+  
+    .input input[type="text"] {
+      font-size: 18px;
+    }
+  
+    #search-button {
+      margin-top: 10px;
+    }
+  
+    .wrapper {
+      margin: 0 5px;
+      padding: 15px;
+    }
+  
+    .wrapper h2 {
+      font-size: 18px;
+    }
+  
+    .wrapper p {
+      font-size: 16px;
+    }
+  
+    footer h6 {
+      font-size: 18px;
+    }
+  }
+  
